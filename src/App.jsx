@@ -1,13 +1,12 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import Panel from "./components/Panel";
+import "./stylesheets/App.scss"
 
 export default function App() {
   return (
-    <div>
-      <FontAwesomeIcon icon={faAngleDown} />
-      <FontAwesomeIcon icon={faXmark} />
+    <div id="app">
+      <div className="container">
+        <Panel />
+      </div>
     </div>
-  )
+  );
 }
