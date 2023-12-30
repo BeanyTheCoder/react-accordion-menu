@@ -6,6 +6,7 @@ export default function App() {
     <div id="app">
       <h1>React accordion menu</h1>
       <div className="container">
+        {/* they are have the same text, will change later */}
         <Panel />
         <Panel />
         <Panel />
