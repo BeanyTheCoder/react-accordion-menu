@@ -3,3 +3,11 @@ $secondary: rgb(203, 0, 0);
 $text-color: #1b1b1b;
 
 $font-paragraph: 16px;
+
+@mixin flex($flex-direction, $justify-content, $align-items, $gap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}

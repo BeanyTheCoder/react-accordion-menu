@@ -1,0 +1,20 @@
+.container__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  &__title {
+    background-color: green;
+    color: yellow;
+    padding: 1em;
+  }
+
+  &__info {
+    background-color: aqua;
+    color: pink;
+    padding: 1.5em 1em;
+    overflow: hidden;
+
+    &.open {
+    }
+  }
+}

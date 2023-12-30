@@ -6,6 +6,8 @@ export default function App() {
     <div id="app">
       <div className="container">
         <Panel />
+        <Panel />
+        <Panel />
       </div>
     </div>
   );

@@ -1,5 +1,18 @@
 @import './config';
 
-#app {
-  background-color: blue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+#app {
+  color: $text-color;
+  font-size: $font-paragraph;
+}
+
+.container {
+  background-color: blue;
+  @include flex(column, center, unset, 0);
+}
+
