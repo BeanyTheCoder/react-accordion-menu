@@ -1,20 +1,40 @@
-.container__panel {
-  display: grid;
-  grid-template-rows: 0fr;
+@import "./config";
 
+.container__panel {
   &__title {
-    background-color: green;
-    color: yellow;
+    @include flex(row, space-between, center, 0);
+    background-color: $light;
+    color: $dark;
     padding: 1em;
+    cursor: pointer;
   }
 
   &__info {
-    background-color: aqua;
-    color: pink;
-    padding: 1.5em 1em;
-    overflow: hidden;
+    background-color: $dark;
+    color: $light;
+    padding: 0 1em;
+    // cool trick for transition to work
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
 
-    &.open {
+    &__text {
+      overflow: hidden;
+
+      p {
+        margin: 1em 0;
+      }
+    }
+  }
+
+  &.open {
+    .container__panel__title {
+      background-color: $primary;
+      color: $light;
+    }
+
+    .container__panel__info {
+      grid-template-rows: 1fr !important;
     }
   }
 }

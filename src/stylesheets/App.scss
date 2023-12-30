@@ -1,4 +1,4 @@
-@import './config';
+@import "./config";
 
 * {
   padding: 0;
@@ -7,12 +7,16 @@
 }
 
 #app {
-  color: $text-color;
+  @include flex(column, flex-start, center, 2em);
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 10em;
+  background-color: $very-light;
+  font-family: system-ui;
   font-size: $font-paragraph;
 }
 
 .container {
-  background-color: blue;
-  @include flex(column, center, unset, 0);
+  background-color: $light;
+  width: clamp(300px, 90%, 500px);
 }
-

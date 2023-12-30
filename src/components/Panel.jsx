@@ -6,19 +6,15 @@ import "../stylesheets/Panel.scss";
 
 export default function Panel() {
   let [isOpen, setIsOpen] = useState(false);
-  let propset = {
-    state: {
-      isOpen,
-    },
-    setState: {
-      setIsOpen,
-    },
-  };
+
+  function toggle() {
+    setIsOpen(!isOpen);
+  }
 
   return (
-    <div className="container__panel">
-      <PanelTitle {...propset} />
-      <PanelInfo {...propset} />
+    <div className={isOpen ? "container__panel open" : "container__panel"} onClick={toggle}>
+      <PanelTitle {...{isOpen}} />
+      <PanelInfo />
     </div>
   );
 }
