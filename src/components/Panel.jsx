@@ -4,7 +4,7 @@ import PanelInfo from "./PanelInfo";
 import PanelTitle from "./PanelTitle";
 import "../stylesheets/Panel.scss";
 
-export default function Panel() {
+export default function Panel({text, heading} = props) {
   let [isOpen, setIsOpen] = useState(false);
 
   function toggle() {
@@ -13,8 +13,8 @@ export default function Panel() {
 
   return (
     <div className={isOpen ? "container__panel open" : "container__panel"} onClick={toggle}>
-      <PanelTitle {...{isOpen}} />
-      <PanelInfo />
+      <PanelTitle heading={heading} {...{isOpen}} />
+      <PanelInfo text={text}/>
     </div>
   );
 }
