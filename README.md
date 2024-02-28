@@ -46,10 +46,6 @@ Note: this is probably the last "simple" project i'll make for a long time. Stay
 - React.js 
 - SCSS
 
-## Roadmap 🗺️
-
-I plan to add different text per panel 💬, customization of panels 🖌️, and dynamic panels 🧨
-
 ## License 📝
 
 This project is licensed under the [License Name](link-to-license-file).
@@ -62,7 +58,7 @@ This project is licensed under the [License Name](link-to-license-file).
 
 ## Project Status 🔥
 
-`version 1.0`, in development
+`version 1.1`, deployed
 
 ## Author 👤
 
